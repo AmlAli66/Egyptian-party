@@ -1,0 +1,194 @@
+/* =========>Global<========== */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+
+    font-weight: 700;
+    line-height: 1.2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #ffffff;
+}
+
+/* =========>header section<========== */
+header {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+
+}
+
+aside {
+    padding-inline: 30px;
+}
+
+.header-box {
+    transition: all 0.5s;
+}
+
+.header-box h2 {
+    justify-self: center;
+    font-size: 60px;
+}
+
+.open-sidebar {
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.left-aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    padding-top: 70px;
+    background-color: #111;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    transition: all 0.5s;
+}
+
+.left-aside ul>li,
+.left-aside-close {
+    color: white;
+    padding-top: 37px;
+    padding-inline: 30px;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.left-aside ul>li a {
+    transition: all 0.5s;
+
+}
+
+.left-aside ul>li a:hover,
+.left-aside-close:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+
+/* =========>Duration section<========== */
+#duration {
+    transition: all 1s;
+}
+
+.singer-header {
+    background-color: #E68285;
+    cursor: pointer;
+
+}
+
+.singer-info {
+    background-color: #CCCCCC;
+    display: none;
+
+}
+
+#duration .singer .first {
+    display: block;
+}
+
+/* =========>Details section<========== */
+.details {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/invitation-2508607__340.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 330px;
+
+
+}
+
+.counting {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* ========>Contact section<========== */
+#contact {
+    padding-block: 100px;
+}
+
+.contact-header h2,
+.contact-info h3 {
+    color: #444;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.contact-info ul>li {
+    color: #777777;
+    margin-block: 15px;
+}
+
+.contact-info .diff-li,
+.remaining-chars {
+    color: #D62E33;
+}
+
+.contact-info ul li i {
+    color: #777777;
+    margin-right: 25px;
+}
+
+.social-icons .social-i {
+
+    width: 45px;
+    height: 45px;
+    color: #777777;
+    border: 1px solid #777777;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons .social-i:hover {
+    background-color: #D62E33;
+    color: white;
+    border-color: #D62E33;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    display: block;
+    background-color: #D62E33;
+    border: 0;
+    color: #ffffff;
+    padding: 10px 20px;
+}
